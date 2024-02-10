@@ -12,3 +12,9 @@ __pycache__/
 # IDE-specific files
 .idea/
 .vscode/
+build/
+install/
+log/
+ocv_proj/
+test/
+resource/
