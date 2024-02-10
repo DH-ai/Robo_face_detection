@@ -33,8 +33,10 @@ class imagePublisher(Node):
         ret, frame = self.cap.read()
         if not ret:
             self.get_logger().info(f"Video Capture status {self.cap.read()[0]}")
+            
         else:
             image_msg = self.bridge.cv2_to_imgmsg(frame)
+            
             # msg.data = image_msg
             self.publisher.publish(image_msg)
             self.get_logger().info(f"Feed sent status {self.cap.read()[0]}")

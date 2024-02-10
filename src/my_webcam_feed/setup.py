@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "webcam_node=my_webcam_feed.webcam_node:main"
+            "webcam_node=my_webcam_feed.webcam_node:main",
+            "Processor= my_webcam_feed.reciever_node:main"
         ],
     },
 )
